@@ -26,7 +26,57 @@
                         <h6>Create New Task</h6>
                     </div>
                     <div class="card-body">
-                        <!-- TODO -->
+                        <form id="taskForm">
+                            <div class="mb-3">
+                                <label for="taskName" class="form-label">Task Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="taskName"
+                                    placeholder="Enter task name"
+                                    required
+                                >
+                    </div>
+                    <div class="mb-3">
+                                <label for="taskDescription" class="form-label"> Description </label>
+                                <textarea
+                                    class="form-control"
+                                    id="taskDescription"
+                                    placeholder="Enter task description"
+                                    rows="2"
+                                >
+                                </textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="taskDate" class="form-label"> Due Date </label>
+                            <input
+                                    type="date"
+                                    class="form-control"
+                                    id="taskDate"
+                                    required
+                            >
+                    </div>
+                    <div class="mb-3">
+                                <label for="taskAssignee" class="form-label"> Assigned To </label>
+                                <select
+                                    class="form-select"
+                                    id="taskAssignee"
+                                    required
+                                >
+                                    <option value="">Select team member</option>
+                                    <option value="Team Member 1">Team Member 1</option>
+                                    <option value="Team Member 2">Team Member 2</option>
+                                    <option value="Team Member 3">Team Member 3</option>
+                                    <option value="Team Member 4">Team Member 4</option>
+                                    <option value="Team Member 5">Team Member 5</option>
+                                </select>
+                    </div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            > Add Task
+                            </button>
+                        </form>
                     </div>
                 </div>
 
